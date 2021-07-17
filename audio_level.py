@@ -1,3 +1,4 @@
+#download the sounddevice and playsound library
 import sounddevice as sd
 import random
 import numpy as np
@@ -53,7 +54,6 @@ def examProctor(indata, outdata, frames, time):
         print("---------------------Exam Proctor is Mad----------------------")
         numm = rad.randint(1,2)
         playsound(str(numm)+"_exam.mp3")
-        #still need to record the sound
     print("|"*int(volume_norm))
 
 def librarian(indata, outdata, frames, time):
@@ -74,7 +74,6 @@ def librarian(indata, outdata, frames, time):
         print("---------------------Librarian is Mad----------------------")
         numm = rad.randint(1,2)
         playsound(str(numm)+"_librarian.mp3")
-        #still need to record the sound
     print("|"*int(volume_norm))
 
 def defKid(indata, outdata, frames, time):
@@ -97,7 +96,6 @@ def defKid(indata, outdata, frames, time):
         print("---------------------Kid is being unreasonable----------------------")
         numm = rad.randint(1,4)
         playsound(str(numm)+"_kid.mp3")
-        #still need to record the sound
     print("|"*int(volume_norm))
 
 print("Choose Mode: \n 1. Report Filler | 2. Librarian | 3. Defensive Five Year Old | 4. Examination Proctor")
